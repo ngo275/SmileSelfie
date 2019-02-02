@@ -14,6 +14,7 @@
 		25449BF822055FAA006DD7D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25449BF622055FAA006DD7D9 /* LaunchScreen.storyboard */; };
 		25449C0322055FAA006DD7D9 /* AutoSelfieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25449C0222055FAA006DD7D9 /* AutoSelfieTests.swift */; };
 		25449C0E22055FAA006DD7D9 /* AutoSelfieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25449C0D22055FAA006DD7D9 /* AutoSelfieUITests.swift */; };
+		25449C1C22056B83006DD7D9 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25449C1B22056B83006DD7D9 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		25449C0922055FAA006DD7D9 /* AutoSelfieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSelfieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25449C0D22055FAA006DD7D9 /* AutoSelfieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSelfieUITests.swift; sourceTree = "<group>"; };
 		25449C0F22055FAA006DD7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25449C1B22056B83006DD7D9 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				25449BED22055FA9006DD7D9 /* AppDelegate.swift */,
 				25449BEF22055FA9006DD7D9 /* ViewController.swift */,
+				25449C1B22056B83006DD7D9 /* AlertController.swift */,
 				25449BF122055FA9006DD7D9 /* Main.storyboard */,
 				25449BF422055FAA006DD7D9 /* Assets.xcassets */,
 				25449BF622055FAA006DD7D9 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25449BF022055FA9006DD7D9 /* ViewController.swift in Sources */,
+				25449C1C22056B83006DD7D9 /* AlertController.swift in Sources */,
 				25449BEE22055FA9006DD7D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

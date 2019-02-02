@@ -16,18 +16,33 @@ class ViewController: UIViewController {
     
     private var isSaving = false
     
+    var isSupported: Bool {
+        return ARFaceTrackingConfiguration.isSupported
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         sceneView?.delegate = self
 
-        startFaceDetection()
+        if isSupported {
+            startFaceDetection()
+        } else {
+            showAlert()
+        }
     }
 
     private func startFaceDetection() {
         let configuration = ARFaceTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
         sceneView?.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    }
+    
+    private func showAlert() {
+        let alert = AlertController(title: "Error", message: "Your device does not support face tracking", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(action)
+        alert.show()
     }
 
     private func savePhoto() {
